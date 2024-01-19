@@ -1,0 +1,188 @@
+.body {
+  background-color: rgb(193, 193, 243);
+}
+
+.card-body {
+  color: rgb(46, 46, 80);
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: 400;
+}
+a {
+  color: #f5f7f7;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    align-items: center; /* Increase the top margin to 22px */
+    margin-left: -3ch;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-group {
+    margin-left: -3ch;
+  }
+}
+
+.footer {
+  margin: 10px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile screen size) */
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 10px; /* Increase the top margin to 22px */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    height: 33ch;
+  }
+}
+
+/* AI IMAGE */
+
+h2 {
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 35px;
+}
+h3 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.prompt {
+  background-color: rgb(#6610f2);
+  padding: 5px;
+  width: 90%;
+  border: 5px solid rgba(hwb(263 6% 5%));
+  border-radius: 5px;
+  margin: auto;
+}
+
+.prompt #generateBtn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* PROMPT CHANGE ORGANIZE */
+
+.inp,
+ {
+  width: 100%; 
+  margin-bottom: 10px; 
+  padding: 10px;
+  margin: 15px;
+  border: 2px solidr gbvea(hwb(27 6% 5%));
+  outline: none !important; /*معلم*/
+  border-color: #719ece;
+  box-shadow: 0 0 5px #719ece;
+} 
+
+input,
+button {
+  padding: 10px;
+  border: none;
+  margin-left: auto;
+  border: 2px solid rgb(27, 6%, 5%);
+  font-size: 20px;
+}
+
+input {
+  background-color: rgb(123, 97, 156);
+  width: 75%;
+  border-radius: 15px;
+  outline: none;
+  color: #fff;
+}
+
+.prompt #generateBtn {
+  background-color: rgb(123, 97, 156);
+  width: auto;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px; /* يجب استخدام #generatebtn بدلاً من button لتحديد الزر بشكل دقيق */
+  outline: none !important; /*معلم*/
+  border-color: #719ece;
+  box-shadow: 0 0 5px #719ece;
+}
+
+@media only screen and (max-width: 767px) {
+  .prompt input {
+    background-color: rgb(123, 97, 156);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .prompt #generateBtn {
+    background-color: rgb(123, 97, 156);
+    display: flex;
+    margin-left: 30%;
+    margin-top: 10px;
+    width: 37%;
+    padding-left: 15px;
+  }
+}
+
+input:focus {
+  outline: none !important; /*معلم*/
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+  background-color: #007bff;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+}
+
+.images div {
+  height: 350px;
+  width: 350px;
+  background-color: rgba(214, 214, 210, 0.377);
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+.images div img {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  div {
+    margin-top: 10px;
+  }
+}
+
+.images div img {
+  width: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* في حالة شاشة الموبايل، عرض صورة واحدة في كل صف */
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
